@@ -13,7 +13,7 @@ function johnLennonFacts(facts){
 
 //The Fab Four in a For Loop//
 function theBeatlesPlay(musicians, instruments){
-  var fabFour = ""
+  var fabFour = []
   for (var i = 0; i < musicians.length; i = i +1){
     fabFour += musicians[i] + " plays " + instruments[i];
     i++;
@@ -31,4 +31,16 @@ function iLoveTheBeatles (number){
     i = i + 1;
   } while (i < 10);
   return devotion
+}
+
+//Correct version of Do/While Loop //
+function iLoveTheBeatles(times){
+  var love = [];
+  var counter = 0;
+  if (times<10);
+  do {
+    love.push("I love the Beatles! ");
+    counter++;
+  } while (counter<10);
+  return love;
 }
